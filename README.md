@@ -55,11 +55,11 @@ filter.py
 
 filter.py has several functionalities: all, indie or range.
 
-all: the filter returns a list of tuples containing the email id (email name) as well as its classification (ham or spam) for all emails in the files/emails directory.
+all: the filter returns a list of tuples containing the email id (email name) as well as its classification (ham or spam) for all emails in the files/emails directory. This is a bulk classification and would be done as a batch job.
 
-indie: the filter returns a list of tuples containing the email id (email name) as well as its classification (ham or spam) for the specified emails.
+indie: the filter returns a list of tuples containing the email id (email name) as well as its classification (ham or spam) for the specified emails. This is more of a real-time oriented return.
 
-range: the filter returns a list of tuples containing the email id (email name) as well as its classification (ham or spam) for the specified email and the number of emails after it as specified. For example, if the inputs are <email1> and <3>, the classifications for <email1> as well as <email2> and <email3> as is present in the files/emails directory will be returned.
+range: the filter returns a list of tuples containing the email id (email name) as well as its classification (ham or spam) for the specified email and the number of emails after it as specified. For example, if the inputs are <email1> and <3>, the classifications for <email1> as well as <email2> and <email3> as is present in the files/emails directory will be returned. Depending on the number of emails in the range, it could be real-time or batch.
 
 For all emails:
 python filter.py all
