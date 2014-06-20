@@ -34,10 +34,7 @@ emailDir = os.path.abspath("../files/emails")
 # Classify all emails in the email directory.
 def filterEmailAll():
 	classifier = loadClassifier("full-classifier.pickle")
-
-	allEmails = []
 	classifications = []
-
 	emailList = glob.glob(emailDir + '/*')
 
 	for i in range(len(emailList)):
