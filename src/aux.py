@@ -1,7 +1,7 @@
 """ Some auxiliary functions put in here reduce clutter in Classifier and Filter. """
 
 import pickle
-from nltk import word_tokenize, NaiveBayesClassifier, classify, WordNetLemmatizer
+from nltk import word_tokenize, WordNetLemmatizer
 from nltk.corpus import stopwords
 
 # Lemmatization of the words reduces complexity while retaining meaning
