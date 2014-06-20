@@ -8,11 +8,13 @@ from nltk.corpus import stopwords
 wordLemmatizer = WordNetLemmatizer()
 commonWords = stopwords.words('english')
 
+# Save the classifier for later use - pass in the classifier and the name to be saved as
 def saveClassifier(model, name):
    writeFile = open(name, 'wb')
    pickle.dump(model, writeFile)
    writeFile.close()
 
+# Load a previously saved classifer - pass in name
 def loadClassifier(name):
 	loadFile = open(name, 'rb')
 	model = pickle.load(loadFile)
@@ -20,6 +22,7 @@ def loadClassifier(name):
 
 	return model
 
+# Returns features for an email - a dict of all tokens
 def emailFeatures(email):
 	featureDict = {}
 

@@ -1,0 +1,19 @@
+Current training data in files/ham directory:
+
+easy_ham 2
+easy_ham_2
+hard_ham
+hard_ham 2
+
+Current training data in files/spam directory:
+
+spam 2
+span_2
+spam_2 2
+
+Current testing data in files/ham directory:
+
+easy_ham
+
+Current testing data in files/spam directory:
+spam
